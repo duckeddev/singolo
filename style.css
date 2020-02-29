@@ -51,11 +51,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__logo {
@@ -114,14 +114,14 @@ h2 {
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .hero__btn-next {
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .hero__btn svg {
@@ -137,9 +137,9 @@ h2 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 .hero__slider-item-phone-x {
@@ -161,8 +161,8 @@ h2 {
 .services .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .services__title {
@@ -181,8 +181,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .services__list-row:first-of-type {
@@ -204,11 +204,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-right: 20px;
 }
 
@@ -257,24 +257,25 @@ h2 {
 .portfolio__btn-list-item-btn {
   background: transparent;
   padding: 5px;
-  font-size: 0, 75rem;
+  font-size: 12px;
   text-transform: capitalize;
   color: #666d89;
+  font-weight: normal;
   border: 1px solid #666d89;
   border-radius: 7px;
 }
 
 .portfolio__btn-list-item-btn:hover {
   cursor: pointer;
-  background: #666d89;
-  color: #2d303a;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .portfolio__projects {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-row-gap: 20px;
 }
 
@@ -311,8 +312,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .about__team-person {
@@ -335,5 +336,74 @@ h2 {
   font-size: 12px;
   line-height: 22px;
   font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.about__team-person-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__team-person-social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.9411vw;
+  width: 2.9411vw;
+  border: 1px solid #666D89;
+  border-radius: 50%;
+}
+
+.about__team-person-social-item:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.about__team-person-social-item svg {
+  width: 25px;
+  height: 25px;
+  fill: #666d89;
+}
+
+.about__team-person-social-item-google:hover {
+  border: 1px solid #DD4B39;
+  background-color: #DD4B39;
+}
+
+.about__team-person-social-item-google:hover svg {
+  fill: #fff;
+}
+
+.about__team-person-social-item-facebook:hover {
+  border: 1px solid #3b5998;
+  background-color: #3b5998;
+}
+
+.about__team-person-social-item-facebook:hover svg {
+  fill: #fff;
+}
+
+.about__team-person-social-item-twitter:hover {
+  border: 1px solid #00acee;
+  background-color: #00acee;
+}
+
+.about__team-person-social-item-twitter:hover svg {
+  fill: #fff;
+}
+
+.about__team-person-social-item-linkedin:hover {
+  border: 1px solid #0e76a8;
+  background-color: #0e76a8;
+}
+
+.about__team-person-social-item-linkedin:hover svg {
+  fill: #fff;
 }
 /*# sourceMappingURL=style.css.map */
