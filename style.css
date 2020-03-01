@@ -35,7 +35,9 @@ h2 {
 
 /*--- Header Styles ---*/
 .header {
-  height: 12.662vh;
+  height: 91px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,20 +77,15 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
 .header__nav-list-item:not(:last-of-type) {
   margin-right: 12px;
 }
 
-.header__nav-list-item:after {
-  content: '.';
-  position: relative;
+.header__nav-dot {
   color: #494e62;
-  top: -1.5px;
-  margin-left: 10px;
-  font-size: 2rem;
+  margin-right: 10px;
 }
 
 .header__nav-list-item:last-of-type:after {
@@ -111,7 +108,7 @@ h2 {
 
 /*--- Hero Section Styles ---*/
 .hero {
-  height: 86.210vh;
+  height: 600px;
   background-color: #f06c64;
   border-bottom: 7px solid #ea676b;
   position: relative;
