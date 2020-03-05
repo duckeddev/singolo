@@ -534,6 +534,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact__feedback-info-title {
   font-size: 17.77px;
   font-weight: 900;
+  margin-bottom: 20px;
 }
 
 .contact__feedback-info-description {
