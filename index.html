@@ -19,7 +19,7 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <div class="header__nav-list-item">
-                        <a href="#home" class="header__nav-list-item-link active">
+                        <a href="#hero" class="header__nav-list-item-link active">
                             home
                         </a>
                     </div>
@@ -67,11 +67,42 @@
             </span>
 
             <div class="hero__slider">
+                <div class="hero__slider-item active">
+                    <div class="hero__slider-item-phone hero__slider-item-phone-x">
+                        <div class="phone">
+                            <div class="dynamic">
+                                <div class="dot">
+
+                                </div>
+                                <div class="line">
+
+                                </div>
+                            </div>
+                            <div class="screen hero__phone-x-screen"></div>
+                            <div class="button hero__phone-x-btn">
+                                <div class="square"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__slider-item-phone-y">
+                        <div class="phone">
+                            <div class="dynamic">
+                                <div class="dot">
+
+                                </div>
+                                <div class="line">
+
+                                </div>
+                            </div>
+                            <div class="screen hero__phone-y-screen"></div>
+                            <div class="button hero__phone-y-btn">
+                                <div class="square"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="hero__slider-item">
-                    <img src="./assets/images/phone1.jpg" alt="phone1"
-                        class="hero__slider-item-phone hero__slider-item-phone-x">
-                    <img src="./assets/images/phone2.jpg" alt="phone1"
-                        class="hero__slider-item-phone hero__slider-item-phone-y">
+                    <img src="assets/Group 645.png" alt="" class="hero__slider-item-phone">
                 </div>
             </div>
 
@@ -275,22 +306,22 @@
                 lacinia odio sem nec elit.</p>
             <ul class="portfolio__btn-list">
                 <li class="portfolio__btn-list-item">
-                    <button class="portfolio__btn-list-item-btn active">
+                    <button class="portfolio__btn-list-item-btn active" id="all">
                         all
                     </button>
                 </li>
                 <li class="portfolio__btn-list-item">
-                    <button class="portfolio__btn-list-item-btn">
+                    <button class="portfolio__btn-list-item-btn" id='web-design'>
                         web design
                     </button>
                 </li>
                 <li class="portfolio__btn-list-item">
-                    <button class="portfolio__btn-list-item-btn">
+                    <button class="portfolio__btn-list-item-btn" id="graphic-design">
                         graphic design
                     </button>
                 </li>
                 <li class="portfolio__btn-list-item">
-                    <button class="portfolio__btn-list-item-btn">
+                    <button class="portfolio__btn-list-item-btn" id="artwork">
                         artwork
                     </button>
                 </li>
@@ -332,7 +363,7 @@
                 <div class="portfolio__projects-item">
                     <img src="./assets/images/portfolio/project12.png" alt="project12">
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -608,12 +639,13 @@
                 tellus ac cursus commodo, tortor mauris condimentum nibh.
             </p>
             <div class="contact__feedback">
-                <form action="" class="contact__feedback-form">
+                <form action="" class="contact__feedback-form" id="contact__form">
                     <input type="text" required placeholder="Name (Required)" class="contact__feedback-form-input">
                     <input type="text" required placeholder="Email (Required)" class="contact__feedback-form-input">
                     <input type="text" placeholder="Subject" class="contact__feedback-form-input">
                     <textarea placeholder="Describe your project in detail..."
                         class="contact__feedback-form-textarea"></textarea>
+                    <input type="submit" value="Submit" class="contact__feedback-form-btn">
                 </form>
                 <div class="contact__feedback-info">
                     <h5 class="contact__feedback-info-title">Contact Information</h5>
@@ -624,8 +656,8 @@
                     </p>
                     <div class="contact__feedback-info-adress">
                         <span>Elm St. 14/05 Lost City</span>
-                        <span>03528 331 86 35 </span>
-                        <span>info@singolo.com</span>
+                        <a href="tel:+03528 331 86 35">03528 331 86 35</a>
+                        <a href="mailto:info@singolo.com">info@singolo.com</a>
                     </div>
                 </div>
             </div>
@@ -707,6 +739,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
