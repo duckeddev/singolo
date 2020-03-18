@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <div class="modal hidden">
+        <div class="modal__message">
+            Test
+        </div>
+        <div class="modal__background"></div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__logo">
@@ -642,10 +648,10 @@
                 <form action="" class="contact__feedback-form" id="contact__form">
                     <input type="text" required placeholder="Name (Required)" class="contact__feedback-form-input">
                     <input type="text" required placeholder="Email (Required)" class="contact__feedback-form-input">
-                    <input type="text" placeholder="Subject" class="contact__feedback-form-input">
-                    <textarea placeholder="Describe your project in detail..."
+                    <input type="text" name="subject" placeholder="Subject" class="contact__feedback-form-input">
+                    <textarea name="message" placeholder="Describe your project in detail..."
                         class="contact__feedback-form-textarea"></textarea>
-                    <input type="submit" value="Submit" class="contact__feedback-form-btn">
+                        <button type="submit" formmethod="POST" class="contact__feedback-form-btn">Submit</button>
                 </form>
                 <div class="contact__feedback-info">
                     <h5 class="contact__feedback-info-title">Contact Information</h5>
@@ -739,12 +745,6 @@
             </div>
         </div>
     </footer>
-    <div class="modal hidden">
-        <div class="modal__message">
-          Test
-        </div>
-        <div class="modal__background"></div>
-      </div>
     <script src="script.js"></script>
 </body>
 

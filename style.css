@@ -831,4 +831,66 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-/*# sourceMappingURL=style.css.map */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.modal__background {
+  width: 100%;
+  height: 100%;
+
+  background: #0008;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal__message {
+  position: fixed;
+  top: 20%;
+
+  max-width: 70%;
+  padding: 30px 40px;
+  
+  background-color: white;
+  border-radius: 5px;
+}
+
+.modal__message p:first-child {
+  margin-top: 0;
+}
+
+.modal__message p {
+  max-height: 210px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal__close-button {
+  box-sizing: unset;
+
+  width: 100%;
+  height: 20px;
+  padding: 12px 0;
+  margin-top: 29px;
+
+  color: #f06c64;
+  border-radius: 5px;
+  border: 2px solid #f06c64;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal__close-button:not(:disabled):hover {
+  color: white;
+  background: #f06c64;
+  opacity: 1;
+}
