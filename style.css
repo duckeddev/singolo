@@ -171,6 +171,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__slider-item {
   display: none;
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .phone {
@@ -278,6 +288,13 @@ h1, h2, h3, h4, h5, h6 {
   background: #000 !important;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+}
+
+.slide-2 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50% -50%);
 }
 
 /*--- Services Section Styles ---*/
@@ -422,6 +439,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  animation: fade 1s;
 }
 
 .bordered {
