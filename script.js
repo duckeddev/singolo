@@ -3,7 +3,7 @@
 const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
-  anchor.addEventListener("click", function(e) {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
     const blockID = anchor.getAttribute("href").substr(1);
@@ -25,6 +25,24 @@ navLinks.forEach(link => {
     });
   });
 });
+
+//hamb btn 
+
+const hamb = document.querySelector('.header__hamburger');
+hamb.addEventListener('click', () => {
+  const menu = document.querySelector('.mobile-nav');
+  menu.style.display = 'flex'
+})
+
+// close menu btn 
+
+const closeBtn = document.querySelector('.mobile-nav-close-btn')
+closeBtn.addEventListener('click', () => {
+
+  const menu = document.querySelector('.mobile-nav');
+  menu.style.display = 'none'
+
+})
 
 // slider script
 
@@ -131,12 +149,12 @@ function addCloseButton(node) {
     "<button class='modal__close-button' type='button'>OK</button>";
   const modalCloseButton = document.querySelector(".modal__close-button");
   modalCloseButton.addEventListener("click", () => {
-      hideModal();
-      let formInputs = document.querySelectorAll('input');
-      let textarea = document.querySelector('textarea');
-      textarea.value = '';
-      formInputs.forEach(item => item.value = '')
-    });
+    hideModal();
+    let formInputs = document.querySelectorAll('input');
+    let textarea = document.querySelector('textarea');
+    textarea.value = '';
+    formInputs.forEach(item => item.value = '')
+  });
   return node;
 }
 
